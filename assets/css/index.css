@@ -1,0 +1,68 @@
+:root{
+    --grey: #a6a6a6;
+    --black: #000;
+    --white: #fff;
+    --dark-grey: #5d5d5d;
+    --font: font-family: 'Poppins', sans-serif;
+}
+
+*{
+    font-family: var(--font);
+}
+
+.home-body{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.nav-item a{
+    text-decoration: none !important;
+    color: var(--white);
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.nav-item a:hover{
+    color: var(--grey);
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+.about, .footer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+}
+
+.name{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.name-container{
+    height: 80vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media{
+    color: var(--dark-grey) !important;
+    text-decoration: none !important;
+    padding: 0 0 0 .5rem;
+}
+
+.social-media:hover{
+    color: var(--black) !important;
+}
+
+.about-title{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
