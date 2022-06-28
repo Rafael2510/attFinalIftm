@@ -37,7 +37,7 @@
                 <li class="nav-item px-3"><a href="index.html">Home</a></li>
                 <li class="nav-item px-3"><a href="itinerary.html">Itinerário formativo</a></li>
                 <li class="nav-item px-3"><a href="professionalPerformance.html">Atuação Profissional</a></li>
-                <li class="nav-item px-3"><a href="family.html">Família, Amigos e Hobby</a></li>
+                <li class="nav-item px-3"><a href="family.html">Hobby</a></li>
             </ul>
         </header>
     </div>
@@ -52,34 +52,22 @@
         </div>
         <div class="container-fluid about py-5 px-5">
             <div class="row ">
-                <div class="col-md-5 col-12 about-title">
+                <div class="col-md-7 col-12 about-title">
                     <h2 class="title">Itinerário</h2>
                 </div>
-                <div class="col-md-7 col-12">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque minus consectetur maxime
-                        magni ratione. Quaerat aliquam, error quas tenetur velit molestias officiis, earum ipsum
-                        voluptates, illo optio cumque nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Saepe quos necessitatibus nisi, hic non inventore explicabo ut voluptates nihil voluptate iure
-                        magnam sint ducimus, eaque perspiciatis id corporis voluptatem consectetur.
+                <div class="col-md-5 col-12">
+                    <h6>Disciplinas do primeiro periodo</h6>
+                    <p id="d1">
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet corrupti iste, totam id
-                        quaerat doloremque est nisi numquam praesentium fugit cupiditate ratione deserunt omnis?
-                        Reprehenderit qui voluptatum nostrum consequatur.
+                    <p id="d2">
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque minus consectetur maxime
-                        magni ratione. Quaerat aliquam, error quas tenetur velit molestias officiis, earum ipsum
-                        voluptates, illo optio cumque nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Saepe quos necessitatibus nisi, hic non inventore explicabo ut voluptates nihil voluptate iure
-                        magnam sint ducimus, eaque perspiciatis id corporis voluptatem consectetur.
+                    <p id="d3">
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet corrupti iste, totam id
-                        quaerat doloremque est nisi numquam praesentium fugit cupiditate ratione deserunt omnis?
-                        Reprehenderit qui voluptatum nostrum consequatur.
+                    <p id="d4">
                     </p>
+                    <p id="d5">
+                    </p>
+                    <h6>Cursando segundo periodo</h6>
                 </div>
             </div>
         </div>
@@ -89,7 +77,6 @@
         <div class="container-fluid text-center footer py-5">
             <span>
                 ©2022 Todos direitos reservados
-                <a href="https://www.instagram.com/jovem_fael/" target="_blank" class="social-media"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://github.com/Rafael2510" target="_blank" class="social-media"><i class="fa-brands fa-github"></i></a>
             </span>
         </div>
@@ -99,3 +86,20 @@
 </body>
 
 </html>
+<script>
+    var FDWData = '{"FDW" : "A disciplina de Fundamentos de web design foi uma importante disciplina na introdução de ferramentas para aplicações web, o ponto positivo é que é bem didatica para quem est[a tendo o primeiro contado com linguegens de programação, sem pontos negativos."}'
+    var ALGData = '{"ALG" : "Na disciplina de Algoritmos e linguagem de programação, são apresentados conceitos basicos de programação e logica, fundamental para discentes que possuem nenhuma ou pouca familiaridade com a programação em si, o ponto positivo é a inicialização com a linguagem C, um ponto negativo seria o periodo de introdução com portugol acredito que mais atrapalha do que auxilia no apredizado."}'
+    var ARQData = '{"ARQ" : "Em Arquitetura e organização de computadores, se entende como é organizado diversos tipos de computadores partindo de microcomputadores a mainframes e supercomputadres, e entendendo sua funcionalidade basica o que auxilia a entender como o desenvolvimento de aplicações e sistemas funciona dentro de uma maquina, pontos positivos é a profundidade que é levada a disciplina, sem pontos negativos."}'
+    var FDMData = '{"FDM" : "Fundamentos da matematica foi uma disciplina importante para a revisão de conceitos matematicos e logicos auxiliando a salientar o conhecimento ja previamente adquirido e trabalhando a parte matematica do desenvolvimento que é exigido em nosso curso, ponto positivo para maneira que é explicada a materia partindo de pontos chaves, ponto negativo seria a frequencia de provas(no periodo EAD)."}'
+    var SINFData = '{"SINF" : "A semana da informatica é uma disciplina que temos em todos periodos para a fomentação de novas aplicções e/ou a melhoria de aplicações ja desenvolvidas, ponto positivo é o incentivo ao desenvolvimento, o ponto negativo é a possivel demanda de tempo para realizar um novo"}'
+    const FDWObj = JSON.parse(FDWData);
+    const ALGObj = JSON.parse(ALGData);
+    const ARQObj = JSON.parse(ARQData);
+    const FDMObj = JSON.parse(FDMData);
+    const SINFObj = JSON.parse(SINFData);
+    document.getElementById('d1').innerHTML = FDWObj.FDW;
+    document.getElementById('d2').innerHTML = ALGObj.ALG;
+    document.getElementById('d3').innerHTML = ARQObj.ARQ;
+    document.getElementById('d4').innerHTML = FDMObj.FDM;
+    document.getElementById('d5').innerHTML = SINFObj.SINF;
+</script>

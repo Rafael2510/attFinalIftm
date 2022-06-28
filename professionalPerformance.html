@@ -37,7 +37,7 @@
                 <li class="nav-item px-3"><a href="index.html">Home</a></li>
                 <li class="nav-item px-3"><a href="itinerary.html">Itinerário formativo</a></li>
                 <li class="nav-item px-3"><a href="professionalPerformance.html">Atuação Profissional</a></li>
-                <li class="nav-item px-3"><a href="family.html">Família, Amigos e Hobby</a></li>
+                <li class="nav-item px-3"><a href="family.html">Hobby</a></li>
             </ul>
         </header>
     </div>
@@ -52,33 +52,11 @@
         </div>
         <div class="container-fluid about py-5 px-5">
             <div class="row ">
-                <div class="col-md-5 col-12 about-title">
+                <div class="col-md-7 col-12 about-title">
                     <h2 class="title">Atuação Profissional</h2>
                 </div>
-                <div class="col-md-7 col-12">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque minus consectetur maxime
-                        magni ratione. Quaerat aliquam, error quas tenetur velit molestias officiis, earum ipsum
-                        voluptates, illo optio cumque nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Saepe quos necessitatibus nisi, hic non inventore explicabo ut voluptates nihil voluptate iure
-                        magnam sint ducimus, eaque perspiciatis id corporis voluptatem consectetur.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet corrupti iste, totam id
-                        quaerat doloremque est nisi numquam praesentium fugit cupiditate ratione deserunt omnis?
-                        Reprehenderit qui voluptatum nostrum consequatur.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque minus consectetur maxime
-                        magni ratione. Quaerat aliquam, error quas tenetur velit molestias officiis, earum ipsum
-                        voluptates, illo optio cumque nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Saepe quos necessitatibus nisi, hic non inventore explicabo ut voluptates nihil voluptate iure
-                        magnam sint ducimus, eaque perspiciatis id corporis voluptatem consectetur.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet corrupti iste, totam id
-                        quaerat doloremque est nisi numquam praesentium fugit cupiditate ratione deserunt omnis?
-                        Reprehenderit qui voluptatum nostrum consequatur.
+                <div class="col-md-5 col-12">
+                    <p id="pro">
                     </p>
                 </div>
             </div>
@@ -89,7 +67,6 @@
         <div class="container-fluid text-center footer py-5">
             <span>
                 ©2022 Todos direitos reservados
-                <a href="https://www.instagram.com/jovem_fael/" target="_blank" class="social-media"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://github.com/Rafael2510" target="_blank" class="social-media"><i class="fa-brands fa-github"></i></a>
             </span>
         </div>
@@ -99,3 +76,9 @@
 </body>
 
 </html>
+<script>
+    var jsonWork= '{"work" : "Atualmente trabalho na empresa Grupo unika, consegui um estagio nesta empresa atraves do curso técnico, sendo efetivado em cerca de 2 meses, atuando como desenvolvedor backend, pretendo continuar na area da programação por agum tempo, posteriormente pretendo iniciar pesquisas na area de BioInformática."}'
+    const workObj = JSON.parse(jsonWork);
+       
+    document.getElementById('pro').innerHTML = workObj.work;
+</script>
